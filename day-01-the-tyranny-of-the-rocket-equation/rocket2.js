@@ -1,5 +1,5 @@
 module.exports = (input) => {
-  const x = input
+  return input
     .split('\n')
     .map((line) => parseInt(line))
     .map((initialMass) => {
@@ -18,7 +18,6 @@ module.exports = (input) => {
       }
 
       return totalFuel;
-    });
-
-  return x.reduce((a, b) => a + b, 0);
+    })
+    .reduce((a, b) => a + b, 0);
 };
