@@ -11,6 +11,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 ## Days
 
 - [Day 1: The Tyranny of the Rocket Equation](day-01-the-tyranny-of-the-rocket-equation/)
+- [Day 2: 1202 Program Alarm](day-02-1202-program-alarm/)
 
 ## Running Tests
 
