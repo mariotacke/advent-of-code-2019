@@ -4,28 +4,14 @@ const getWirePositions = (wire) => {
 
   let length = 0;
 
-  positions.set(`${position.x},${position.y}`, length);
-
   for (let i = 0; i < wire.length; i++) {
     const { direction, distance } = wire[i];
 
-    const directionX = direction === 'L' ? -1 : 1;
-    const directionY = direction === 'U' ? -1 : 1;
+    for (let step = 1; step <= distance; step++) {
+      position.x += direction === 'L' ? -1 : direction === 'R' ? 1 : 0;
+      position.y += direction === 'U' ? -1 : direction === 'D' ? 1 : 0;
 
-    if (direction === 'U' || direction === 'D') {
-      for (let step = 1; step <= distance; step++) {
-        length += 1;
-        positions.set(`${position.x},${position.y + directionY * step}`, length);
-      }
-
-      position.y += directionY * distance;
-    } else if (direction === 'L' || direction === 'R') {
-      for (let step = 1; step <= distance; step++) {
-        length += 1;
-        positions.set(`${position.x + directionX * step},${position.y}`, length);
-      }
-
-      position.x += directionX * distance;
+      positions.set(`${position.x},${position.y}`, ++length);
     }
   }
 
@@ -53,6 +39,5 @@ module.exports = (input) => {
   return wire2Positions
     .filter(([position]) => wire1Positions.has(position))
     .map(([position, steps]) => wire1Positions.get(position) + steps)
-    .slice(1) // skip 0,0
     .sort((a, b) => a - b)[0];
 };
