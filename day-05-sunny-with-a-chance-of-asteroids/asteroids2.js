@@ -1,4 +1,4 @@
-module.exports = (instructions, input = 1) => {
+module.exports = (instructions, input = 5) => {
   const initialMemoryState = instructions.split(',');
 
   const memory = [...initialMemoryState];
@@ -44,6 +44,40 @@ module.exports = (instructions, input = 1) => {
       output = getParameter(parameter1Mode, instructionPointer + 1);
 
       instructionPointer += 2;
+    } else if (opcode === 5) {
+      const parameter1 = getParameter(parameter1Mode, instructionPointer + 1);
+      const parameter2 = getParameter(parameter2Mode, instructionPointer + 2);
+
+      if (Number(parameter1) !== 0) {
+        instructionPointer = Number(parameter2);
+      } else {
+        instructionPointer += 3;
+      }
+    } else if (opcode === 6) {
+      const parameter1 = getParameter(parameter1Mode, instructionPointer + 1);
+      const parameter2 = getParameter(parameter2Mode, instructionPointer + 2);
+
+      if (Number(parameter1) === 0) {
+        instructionPointer = Number(parameter2);
+      } else {
+        instructionPointer += 3;
+      }
+    } else if (opcode === 7) {
+      const parameter1 = getParameter(parameter1Mode, instructionPointer + 1);
+      const parameter2 = getParameter(parameter2Mode, instructionPointer + 2);
+      const parameter3 = memory[instructionPointer + 3];
+
+      memory[parameter3] = Number(parameter1) < Number(parameter2) ? '1' : '0';
+
+      instructionPointer += 4;
+    } else if (opcode === 8) {
+      const parameter1 = getParameter(parameter1Mode, instructionPointer + 1);
+      const parameter2 = getParameter(parameter2Mode, instructionPointer + 2);
+      const parameter3 = memory[instructionPointer + 3];
+
+      memory[parameter3] = Number(parameter1) === Number(parameter2) ? '1' : '0';
+
+      instructionPointer += 4;
     }
   }
 
