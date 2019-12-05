@@ -14,6 +14,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 2: 1202 Program Alarm](day-02-1202-program-alarm/)
 - [Day 3: Crossed Wires](day-03-crossed-wires/)
 - [Day 4: Secure Container](day-04-secure-container/)
+- [Day 5: Sunny with a Chance of Asteroids](day-05-sunny-with-a-chance-of-asteroids/)
 
 ## Running Tests
 
