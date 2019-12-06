@@ -15,6 +15,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 3: Crossed Wires](day-03-crossed-wires/)
 - [Day 4: Secure Container](day-04-secure-container/)
 - [Day 5: Sunny with a Chance of Asteroids](day-05-sunny-with-a-chance-of-asteroids/)
+- [Day 6: Universal Orbit Map](day-06-universal-orbit-map/)
 
 ## Running Tests
 
