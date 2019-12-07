@@ -1,4 +1,4 @@
-module.exports = (instructions, input = 5) => {
+module.exports = (instructions, input = [5]) => {
   const initialMemoryState = instructions.split(',');
 
   const memory = [...initialMemoryState];
@@ -37,7 +37,7 @@ module.exports = (instructions, input = 5) => {
     } else if (opcode === 3) {
       const parameter1 = memory[instructionPointer + 1];
 
-      memory[parameter1] = `${input}`;
+      memory[parameter1] = `${input.shift()}`;
 
       instructionPointer += 2;
     } else if (opcode === 4) {
