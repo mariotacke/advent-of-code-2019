@@ -17,6 +17,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 5: Sunny with a Chance of Asteroids](day-05-sunny-with-a-chance-of-asteroids/)
 - [Day 6: Universal Orbit Map](day-06-universal-orbit-map/)
 - [Day 7: Amplification Circuit](day-07-amplification-circuit/)
+- [Day 8: Space Image Format](day-08-space-image-format/)
 
 ## Running Tests
 
