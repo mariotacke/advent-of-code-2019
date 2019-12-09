@@ -18,6 +18,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 6: Universal Orbit Map](day-06-universal-orbit-map/)
 - [Day 7: Amplification Circuit](day-07-amplification-circuit/)
 - [Day 8: Space Image Format](day-08-space-image-format/)
+- [Day 9: Sensor Boost](day-09-sensor-boost/)
 
 ## Running Tests
 
