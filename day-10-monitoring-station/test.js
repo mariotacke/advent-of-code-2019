@@ -1,6 +1,7 @@
 const assert = require('assert');
 
 const station = require('./station');
+const station2 = require('./station2');
 
 describe('Day 10: Monitoring Station', () => {
   it('should determine best location in sample map 1 (small)', () => {
@@ -87,4 +88,32 @@ describe('Day 10: Monitoring Station', () => {
 
     assert.deepStrictEqual(station(map), { x: 11, y: 13, asteroids: 210 });
   });
+
+  describe('Part Two', () => {
+    it('should find the 200th asteroid to be vaporized', () => {
+      const map =
+        `.#..##.###...#######
+         ##.############..##.
+         .#.######.########.#
+         .###.#######.####.#.
+         #####.##.#.##.###.##
+         ..#####..#.#########
+         ####################
+         #.####....###.#.#.##
+         ##.#################
+         #####.##.###..####..
+         ..######..##.#######
+         ####.##.####...##..#
+         .#####..#.######.###
+         ##...#.##########...
+         #.##########.#######
+         .####.#.###.###.#.##
+         ....##.##.###..#####
+         .#.#.###########.###
+         #.#.#.#####.####.###
+         ###.##.####.##.#..##`;
+
+      assert.deepStrictEqual(station2(map, { x: 11, y: 13 }), 802);
+    });
+  })
 });
