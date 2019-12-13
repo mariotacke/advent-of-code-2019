@@ -20,6 +20,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 8: Space Image Format](day-08-space-image-format/)
 - [Day 9: Sensor Boost](day-09-sensor-boost/)
 - [Day 10: Monitoring Station](day-10-monitoring-station/)
+- [Day 11: Space Police](day-11-space-police/)
 
 ## Running Tests
 
