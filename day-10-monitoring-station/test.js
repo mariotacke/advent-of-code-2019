@@ -115,5 +115,5 @@ describe('Day 10: Monitoring Station', () => {
 
       assert.deepStrictEqual(station2(map, { x: 11, y: 13 }), 802);
     });
-  })
+  });
 });
