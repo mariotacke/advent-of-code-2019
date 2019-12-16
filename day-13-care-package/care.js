@@ -1,7 +1,8 @@
 const intcode = require('./intcode');
 
 module.exports = (input) => {
-  const output = intcode(input, []);
+  const program = input.split(',').map(Number);
+  const output = intcode(program, []);
 
   let blocks = 0;
 

@@ -12,9 +12,7 @@ const LESS_THAN = 7;
 const EQUALS = 8;
 const ADJUST_RELATIVE_BASE = 9;
 
-module.exports = (instructions, input = []) => {
-  const initialMemoryState = instructions.split(',').map(Number);
-
+module.exports = (initialMemoryState, input = []) => {
   const memory = [...initialMemoryState]
     // expand memory space
     .concat(Array.from({ length: 1024 }).map(() => 0));
@@ -70,11 +68,12 @@ module.exports = (instructions, input = []) => {
       const parameter1 = getAddress(parameter1Mode, instructionPointer + 1);
 
       memory[parameter1] = input.shift();
+      console.log('RECEIVE', memory[parameter1]);
 
       instructionPointer += 2;
     } else if (opcode === SEND) {
       output.push(getValue(parameter1Mode, instructionPointer + 1));
-
+      console.log(getValue(parameter1Mode, instructionPointer + 1));
       instructionPointer += 2;
     } else if (opcode === JUMP_IF_NOT_ZERO) {
       const parameter1 = getValue(parameter1Mode, instructionPointer + 1);
