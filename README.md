@@ -23,6 +23,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 11: Space Police](day-11-space-police/)
 - [Day 12: The N-Body Problem](day-12-the-n-body-problem/)
 - [Day 13: Care Package](day-13-care-package/)
+- [Day 14: Space Stoichiometry](day-14-space-stoichiometry/)
 
 ## Running Tests
 
