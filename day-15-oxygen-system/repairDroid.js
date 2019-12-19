@@ -122,7 +122,7 @@ class RepairDroid {
 
     [...this._map.entries()].forEach(([key, value]) => {
       const [x, y] = key.split(',').map(Number);
-      const status = statuses[value] || '(';
+      const status = statuses[value];
 
       maze[y + dy][x + dx] = status;
     });
