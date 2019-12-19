@@ -25,6 +25,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 13: Care Package](day-13-care-package/)
 - [Day 14: Space Stoichiometry](day-14-space-stoichiometry/)
 - [Day 15: Oxygen System](day-15-oxygen-system/)
+- [Day 16: Flawed Frequency Transmission](day-16-flawed-frequency-transmission/)
 
 ## Running Tests
 
