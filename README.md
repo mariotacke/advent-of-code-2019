@@ -26,6 +26,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 14: Space Stoichiometry](day-14-space-stoichiometry/)
 - [Day 15: Oxygen System](day-15-oxygen-system/)
 - [Day 16: Flawed Frequency Transmission](day-16-flawed-frequency-transmission/)
+- [Day 17: Set and Forget](day-17-set-and-forget/)
 
 ## Running Tests
 
