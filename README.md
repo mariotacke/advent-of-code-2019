@@ -27,6 +27,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 - [Day 15: Oxygen System](day-15-oxygen-system/)
 - [Day 16: Flawed Frequency Transmission](day-16-flawed-frequency-transmission/)
 - [Day 17: Set and Forget](day-17-set-and-forget/)
+- [Day 24: Planet of Discord](day-24-planet-of-discord/)
 
 ## Running Tests
 
