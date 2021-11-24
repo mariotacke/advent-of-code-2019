@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Advent of Code 2019",
   "main": "index.js",
-  "author": "Mario Tacke <tacke.mario@gmail.com> (https://www.mariotacke.io)",
+  "author": "Mario Tacke <hi@mariotacke.io> (https://www.mariotacke.io)",
   "license": "MIT",
   "scripts": {
     "test": "mocha day-*/**/test.js",
@@ -14,7 +14,7 @@
     "url": "https://github.com/mariotacke/advent-of-code-2019.git"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "mocha": "^8.2.1"
+    "eslint": "^8.3.0",
+    "mocha": "^9.1.3"
   }
 }
